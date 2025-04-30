@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "PostInsights",
+	"version": "1.0",
+	"description": "A tool to automatically copy posts details including the header and comments to allow details to be summarized using AI tools for better insights.",
+	"icons": {
+	  "16": "icon.png",
+	  "48": "icon.png",
+	  "128": "icon.png"
+	},
+	"permissions": [
+	  "activeTab"
+	],
+	"background": {
+	  "service_worker": "background.js"
+	},
+	"action": {
+	  "default_popup": "popup.html",
+	  "default_icon": "icon.png"
+	}
+  }
+  
