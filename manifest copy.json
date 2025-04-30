@@ -17,6 +17,14 @@
 	"action": {
 	  "default_popup": "popup.html",
 	  "default_icon": "icon.png"
-	}
+	},
+	"content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://www.google.com/*"
+      ]
+    }
+  ]
   }
   
