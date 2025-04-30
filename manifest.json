@@ -9,7 +9,7 @@
 	  "128": "icon.png"
 	},
 	"permissions": [
-	  "activeTab"
+	  "activeTab", "scripting"
 	],
 	"background": {
 	  "service_worker": "background.js"
@@ -17,6 +17,15 @@
 	"action": {
 	  "default_popup": "popup.html",
 	  "default_icon": "icon.png"
-	}
+	},
+	"content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
   }
   
